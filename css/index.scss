@@ -1,0 +1,284 @@
+﻿$clrBlue:#0000ff;
+$clrLightBlue: lighten($clrBlue,30%);
+
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+  @-o-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+
+@mixin animate($name, $duration, $iteration, $direction) {
+  -webkit-animation-duration: $duration;
+     -moz-animation-duration: $duration;
+       -o-animation-duration: $duration;
+          animation-duration: $duration;
+  -webkit-animation-iteration-count: $iteration;
+     -moz-animation-iteration-count: $iteration;
+       -o-animation-iteration-count: $iteration;
+          animation-iteration-count: $iteration;
+  -webkit-animation-name: $name;
+     -moz-animation-name: $name;
+       -o-animation-name: $name;
+          animation-name: $name;
+  -webkit-animation-direction: $direction;
+     -moz-animation-direction: $direction;
+       -o-animation-direction: $direction;
+          animation-direction: $direction;
+}
+
+@mixin textOutline($clr){
+    text-shadow: -2px -2px 0 $clr,
+        2px -2px 0 $clr,
+        -2px 2px 0 $clr,
+        2px 2px 0 $clr,
+        2px 0px 0 $clr,
+        -2px 0px 0 $clr,
+        0px 2px 0 $clr,
+        0px -2px 0 $clr;
+}
+
+
+* {
+    box-sizing:border-box;
+    padding:0;
+    margin: 0;
+}
+
+body {
+    background: $clrLightBlue;
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
+body *{
+    z-index: 20;
+}
+
+#map{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20vw;
+    height: 100vh;
+    background-size: 100% 100%;
+    z-index: 10;
+    .mapLocation{
+        position: absolute;
+        color:red;
+        width: 56px;
+        height: 56px;
+        font-size:56px;
+        text-align: center;
+        line-height: 56px;
+    }
+}
+
+#riddle{
+    position: relative;
+    display:block;
+    left: 25%;
+    top: 20px;
+    width: 50%;
+    height: 50vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+.riddleHeader{
+    font-size: 48px;
+}
+
+.riddleStory{
+    font-size: 28px;
+}
+.riddleHeader, .riddleStory{
+    font-weight: bolder;
+    background-color: blue;
+    color: white;
+    opacity: 0.5;
+}
+
+.welcomeStory{
+    font-size: 32px;
+    @include textOutline(white);
+}
+
+.scrollAnimation{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+
+    @include animate(scrollStory,5s,1,normal);
+}
+
+@include keyframes(scrollStory) {
+    from{
+        top: 100%;
+    }
+    to{
+        top: 0;
+    }
+}
+
+
+//if you want to place a control horizonal centrally,
+//you have to:
+//      set position to relative or absolute
+//      set the left
+//in calc, you must insert space before and after the operator
+
+#btnGo, #btnRestart{
+    height: 28px;
+    line-height:28px;
+    width: 80px;
+    text-align:center;
+    background:black;
+    color: white;
+    left: calc((100% - 80px) / 2);
+    position:relative;
+    cursor: pointer;
+}
+
+#btnRestart{
+    position: absolute;
+    width: 120px;
+    left: calc((100% - 80px) / 2);
+    top: calc((100% - 28px) / 2);
+}
+
+#resultText{
+    position: absolute;
+    display: block;
+    font-size:72px;
+    width: 100%;
+    height: 72px;
+    text-align:center;
+    top: calc((100% - 28px) / 2 - 90px);
+    @include textOutline(white);
+}
+
+.modal {
+    opacity: 1;
+    display:block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    background-size: 100% 100%;
+}
+
+#answer{
+    position: relative;
+    display:block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.answer-letter{
+    display:inline-block;
+    width: 28px;
+    height: 50px;
+    font-size: 32px;
+    margin:0 10px;
+    @include textOutline(white);
+}
+
+#triesLeft{
+    text-align:center;
+    @include textOutline(white);
+}
+
+#keyboard{
+    width: 320px;
+    height: 100px;
+    position: relative;
+    left: calc(50% - 160px);
+
+    .keyline{
+        position: absolute;
+        margin: 4px;
+        height: 33%;
+
+        .key {
+            display: inline-block;
+            width:24px;
+            height: 24px;
+            color: white;
+            text-align: center;
+            line-height: 24px;
+            background-color:#636363;
+            box-shadow: -1.5px -1.5px 1.5px #ccc,1.5px 1.5px 1.5px #222;
+            cursor: pointer;
+            &:active{
+                box-shadow: 1.5px 1.5px 1.5px #ccc,-1.5px -1.5px 1.5px #222;
+            }
+        }
+    }
+
+    #keyline-1{
+        left: 16px;
+        top: 0px;
+    }
+
+    #keyline-2{
+        left: 30px;
+        top: 32px;
+    }
+
+    #keyline-3{
+        left: 44px;
+        top: 64px;
+    }
+}
+
+#progress {
+    width:320px;
+    height: 24px;
+    background-color: #808080;
+    border:1px solid black;
+    position:relative;
+    box-shadow: inset 1px 1px 1px #909090;
+    top: 20px;
+    left: calc((100vw - 300px) / 2 );
+    .progress-indicator{
+        position:absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #8080ff;
+    }
+    .progress-text{
+        position:absolute;
+        left:0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        line-height: 24px;
+        color: white;
+        text-align:center;
+        vertical-align:middle;
+        //z-index: 10;
+    }
+}
+
+
+.hidden {
+    display: none;
+}
+

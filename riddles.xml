@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<game>
+  <welcome>
+    <img>./img/welcome.jpg</img>
+    <story>
+    &lt;p&gt;Long long ago, there is monster.&lt;/p&gt;
+    &lt;p&gt;He hid a lot of treasure in the cave.&lt;/p&gt;
+    &lt;p&gt;Do you want it?&lt;/p&gt;
+    &lt;p&gt;You have to guess his riddles...&lt;/p&gt;
+    </story>
+  </welcome>
+  <map>
+    <img>./img/map.jpg</img>
+    <rounds>
+      <round>
+        <x>484</x>
+        <y>1029</y>
+      </round>
+      <round>
+        <x>437</x>
+        <y>794</y>
+      </round>
+      <round>
+        <x>395</x>
+        <y>464</y>
+      </round>
+      <round>
+        <x>195</x>
+        <y>510</y>
+      </round>
+      <round>
+        <x>279</x>
+        <y>341</y>
+      </round>
+      <round>
+        <x>548</x>
+        <y>265</y>
+      </round>
+      <round>
+        <x>381</x>
+        <y>221</y>
+      </round>
+    </rounds>
+  </map>
+  <lose>
+    <img>./img/failed.jpg</img>
+  </lose>
+  <win>
+    <img>./img/succeeded.jpg</img>
+  </win>
+  <riddles>
+    <riddle>
+      <title>Clever Word</title>
+      <story>What word contains all of the twenty six letters?</story>
+      <level>1</level>
+      <answer>Alphabet</answer>
+      <img>./img/1.jpg</img>
+      <timeout>60</timeout>
+    </riddle>
+    <riddle>
+      <title>One Word</title>
+      <story>
+        &lt;p&gt;My first is often at the front door.&lt;/p&gt;
+        &lt;p&gt;My second is found in the cereal family.&lt;/p&gt;
+        &lt;p&gt;My third is what most people want.&lt;/p&gt;
+        &lt;p&gt;My whole is one of the United States.&lt;/p&gt;
+      </story>
+      <level>7</level>
+      <answer>MATRIMONY</answer>
+      <img>./img/7.jpg</img>
+      <timeout>180</timeout>
+    </riddle>
+    <riddle>
+      <title>Take It Or Leave It</title>
+      <story>
+        The more you take, the more you leave behind. What am I?
+      </story>
+      <level>2</level>
+      <answer>Footsteps</answer>
+      <img>./img/2.jpg</img>
+      <timeout>60</timeout>
+    </riddle>
+    <riddle>
+      <title>Shifting Colors</title>
+      <story>
+        &lt;p&gt;What is black when you buy it, red when you use it,&lt;/p&gt;
+        &lt;p&gt;and gray when you throw it away?&lt;/p&gt;
+      </story>
+      <level>3</level>
+      <answer>Charcoal</answer>
+      <img>./img/3.jpg</img>
+      <timeout>120</timeout>
+    </riddle>
+    <riddle>
+      <title>First And Last</title>
+      <story>
+        What belongs to you, but other people use it more than you?
+      </story>
+      <level>3</level>
+      <answer>Your name</answer>
+      <img>./img/3.jpg</img>
+      <timeout>120</timeout>
+    </riddle>
+    <riddle>
+      <title>Wooden Case</title>
+      <story>
+        &lt;p&gt;I am taken from a mine, and shut up in a wooden case,&lt;/p&gt;
+        &lt;p&gt;from which I am never released,&lt;/p&gt;
+        &lt;p&gt;and yet I am used by almost everybody.&lt;/p&gt;
+      </story>
+      <level>5</level>
+      <answer>Pencil lead</answer>
+      <img>./img/5.jpg</img>
+      <timeout>180</timeout>
+    </riddle>
+    <riddle>
+      <title>Put Me Out</title>
+      <story>
+        &lt;p&gt;I am not alive, but I grow;&lt;/p&gt;
+        &lt;p&gt;I don't have lungs, but I need air;&lt;/p&gt;
+        &lt;p&gt;I don't have a mouth, but water kills me.&lt;/p&gt;
+        &lt;p&gt;What am I?
+      </story>
+      <level>4</level>
+      <answer>Fire</answer>
+      <img>./img/4.jpg</img>
+      <timeout>120</timeout>
+    </riddle>
+    <riddle>
+      <title>Do You Have It?</title>
+      <story>
+        &lt;p&gt;Poor people have it.&lt;/p&gt;
+        &lt;p&gt;Rich people need it.&lt;/p&gt;
+        &lt;p&gt;If you eat it you die.&lt;/p&gt;
+        &lt;p&gt;what is it?
+      </story>
+      <level>2</level>
+      <answer>Nothing</answer>
+      <img>./img/2.jpg</img>
+      <timeout>120</timeout>
+    </riddle>
+    <riddle>
+      <title>What To Wear</title>
+      <story>
+        What did the tree wear to the pool?
+      </story>
+      <level>2</level>
+      <answer>Swim trunks</answer>
+      <img>./img/2.jpg</img>
+      <timeout>120</timeout>
+    </riddle>
+    <riddle>
+      <title>Time Passes</title>
+      <story>
+        &lt;p&gt;You have me today,&lt;/p&gt;
+        &lt;p&gt;Tomorrow you'll have more;&lt;/p&gt;
+        &lt;p&gt;As your time passes,&lt;/p&gt;
+        &lt;p&gt;I'm not easy to store;&lt;/p&gt;
+        &lt;p&gt;I don't take up space,&lt;/p&gt;
+        &lt;p&gt;But I'm only in one place;&lt;/p&gt;
+        &lt;p&gt;I am what you saw,&lt;/p&gt;
+        &lt;p&gt;But not what you see.&lt;/p&gt;
+        &lt;p&gt;What am I?&lt;/p&gt;
+      </story>
+      <level>6</level>
+      <answer>Memories</answer>
+      <img>./img/6.jpg</img>
+      <timeout>180</timeout>
+    </riddle>
+    <riddle>
+      <title>Snowman's Breakfast</title>
+      <story>
+        What does a snowman like to eat for breakfast?
+      </story>
+      <level>7</level>
+      <answer>Frosted Flakes</answer>
+      <img>./img/7.jpg</img>
+      <timeout>180</timeout>
+    </riddle>
+    <riddle>
+      <title>
+        Railroad Crossing
+      </title>
+      <story>
+        &lt;p&gt;Railroad Crossing, look out for the cars.&lt;/p&gt;
+        &lt;p&gt;Can you spell that, without any R's?&lt;/p&gt;
+      </story>
+      <level>1</level>
+      <answer>that</answer>
+      <img>./img/1.jpg</img>
+      <timeout>60</timeout>
+    </riddle>
+    <riddle>
+      <title>
+        A Time When They Are Green
+      </title>
+      <story>
+        &lt;p&gt;A time when they are green,&lt;/p&gt;
+        &lt;p&gt;a time when they're brown,&lt;/p&gt;
+        &lt;p&gt;but both of these times, cause me to frown.&lt;/p&gt;
+        &lt;p&gt;But just in between, for a very short while,&lt;/p&gt;
+        &lt;p&gt;They're perfect and yellow and cause me to smile!&lt;/p&gt;
+        &lt;p&gt;What am I talking about here?&lt;/p&gt;
+      </story>
+      <level>2</level>
+      <answer>Bananas</answer>
+      <img>./img/2.jpg</img>
+      <timeout>60</timeout>
+    </riddle>
+    <riddle>
+      <title>
+        Valentine Reindeer
+      </title>
+      <story>
+        Which one of Santa's reindeer can be seen on Valentines day?
+      </story>
+      <level>6</level>
+      <answer>Cupid</answer>
+      <img>./img/6.jpg</img>
+      <timeout>180</timeout>
+    </riddle>
+    <riddle>
+      <title>
+        Palindrome
+      </title>
+      <story>
+        What 7 letter word is spelled the same way backwards and forewords?
+      </story>
+      <level>7</level>
+      <answer>Racecar</answer>
+      <img>./img/7.jpg</img>
+      <timeout>180</timeout>
+    </riddle>
+    <riddle>
+      <title>
+        Nuts &#38; Shells
+      </title>
+      <story>
+        What kind of nut has no shell?
+      </story>
+      <level>4</level>
+      <answer>Doughnut</answer>
+      <img>./img/4.jpg</img>
+      <timeout>120</timeout>
+    </riddle>
+    <riddle>
+      <title>
+        No One Ever Saw Me, Nor Ever Will
+      </title>
+      <story>
+        &lt;p&gt;I never was, am always to be.&lt;/p&gt;
+        &lt;p&gt;No one ever saw me, nor ever will.&lt;/p&gt;
+        &lt;p&gt;And yet I am the confidence of all,&lt;/p&gt;
+        &lt;p&gt;To live and breathe on this terrestrial ball.&lt;/p&gt;
+        &lt;p&gt;What am I?
+      </story>
+      <level>5</level>
+      <answer>Tomorrow</answer>
+      <img>./img/5.jpg</img>
+      <timeout>120</timeout>
+    </riddle>
+  </riddles>
+</game>
